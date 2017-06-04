@@ -1,0 +1,12 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.choi.spring.persistence.UserMapper">
+    <cache/>
+
+    <select id="getUsers" resultType="com.choi.spring.domain.User">
+        SELECT * FROM users
+    </select>
+
+    <select id="getUsersXml" resultType="com.choi.spring.domain.User">
+        SELECT * FROM users
+    </select>
+</mapper>

@@ -22,7 +22,7 @@ jar {
 def ver = [
         spring: '4.2.4.RELEASE',
         slf4j: '1.7.12',
-        jackson: '2.1.0',
+        jackson: '2.8.8',
         junit: '4.9',
         aspectj: '1.8.9'
 ]
@@ -38,7 +38,11 @@ dependencies {
             "org.springframework:spring-jdbc:${ver.spring}",
             "org.springframework:spring-expression:${ver.spring}",
             "org.springframework:spring-context-support:${ver.spring}",
-            "org.springframework:spring-aop:${ver.spring}"
+            "org.springframework:spring-aop:${ver.spring}",
+            "org.springframework:spring-oxm:${ver.spring}",
+            "hsqldb:hsqldb:1.8.0.10",
+            "org.mybatis:mybatis-spring:1.3.1",
+            "org.mybatis:mybatis:3.4.1"
 
     compile "org.aspectj:aspectjrt:${ver.aspectj}",
             "org.aspectj:aspectjtools:${ver.aspectj}",
@@ -66,6 +70,11 @@ dependencies {
             "javax.servlet.jsp:jsp-api:2.2"
 
     runtime "javax.servlet:jstl:1.1.2"
+
+    compile "org.projectlombok:lombok:1.16.16"
+
+    compile "com.fasterxml.jackson.core:jackson-core:${ver.jackson}",
+            "com.fasterxml.jackson.core:jackson-databind:${ver.jackson}"
 }
 
 war {
