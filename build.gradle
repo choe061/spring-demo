@@ -34,13 +34,11 @@ dependencies {
             "org.springframework:spring-web:${ver.spring}",
             "org.springframework:spring-webmvc:${ver.spring}",
             "org.springframework:spring-beans:${ver.spring}",
-            "mysql:mysql-connector-java:5.1.39",
             "org.springframework:spring-jdbc:${ver.spring}",
             "org.springframework:spring-expression:${ver.spring}",
             "org.springframework:spring-context-support:${ver.spring}",
             "org.springframework:spring-aop:${ver.spring}",
-            "org.springframework:spring-oxm:${ver.spring}",
-            "hsqldb:hsqldb:1.8.0.10",
+            "mysql:mysql-connector-java:5.1.39",
             "org.mybatis:mybatis-spring:1.3.1",
             "org.mybatis:mybatis:3.4.1"
 

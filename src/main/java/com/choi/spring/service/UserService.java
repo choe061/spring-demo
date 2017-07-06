@@ -11,8 +11,12 @@ import java.util.ArrayList;
  */
 @Transactional
 public interface UserService {
-    HttpResponse insertUser(User user);
-    ArrayList<User> getUsers();
-    User getUser(String name);
-    HttpResponse deleteUser(String name);
+
+    @Transactional(readOnly = true)
+    public ArrayList<User> getUsers();
+    @Transactional(readOnly = true)
+    public User getUser(String name);
+
+    public HttpResponse insertUser(User user);
+    public HttpResponse deleteUser(String name);
 }
